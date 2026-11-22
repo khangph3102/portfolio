@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huu Khang — Graphic Designer & 3D Artist | Portfolio 2026</title>
+  <meta
+    name="description"
+    content="Portfolio 2026 of Huu Khang — Graphic Designer & 3D Artist specializing in 3D Art, 2D Illustration, Video, and Commercial Projects."
+  />
+
+  <!-- Fonts with full Vietnamese support & clean geometric aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Sticky Top Navigation (Appears smoothly as you scroll past the cover) -->
+  <header class="sticky-nav" id="stickyNav" aria-label="Primary navigation">
+    <div class="sticky-nav__inner">
+      <a href="#top" class="sticky-nav__brand">
+        <span class="sticky-nav__dot" aria-hidden="true"></span>
+        <span>Huu Khang</span>
+        <span class="sticky-nav__year">2026</span>
+      </a>
+
+      <nav class="sticky-nav__links" aria-label="Portfolio categories">
+        <button type="button" class="nav-pill is-active" data-filter-jump="all">All</button>
+        <button type="button" class="nav-pill" data-filter-jump="3d">3D Art</button>
+        <button type="button" class="nav-pill" data-filter-jump="illustration">2D Illustration</button>
+        <button type="button" class="nav-pill" data-filter-jump="video">Video</button>
+      </nav>
+
+      <a href="#contact" class="sticky-nav__cta">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Artboard Container -->
+  <main id="top" class="page-shell">
+    <!-- =========================================================
+         SECTION 1: ARTBOARD 1 COVER (HERO + SPLIT BENTO GRID)
+         ========================================================= -->
+    <section class="artboard" aria-label="Portfolio Cover">
+      <!-- HERO BANNER -->
+      <header class="hero">
+        <!-- Layered Placeholder Art (Visible when hero image is missing) -->
+        <div class="hero__placeholder" aria-hidden="true">
+          <div class="hero__glow hero__glow--green"></div>
+          <div class="hero__glow hero__glow--blue"></div>
+          <div class="hero__particles"></div>
+          <svg class="hero__bot-silhouette" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="205" cy="288" rx="130" ry="18" fill="rgba(10,16,30,0.55)" />
+            <circle cx="205" cy="135" r="78" fill="url(#helmetGrad)" stroke="rgba(255,255,255,0.14)" stroke-width="2" />
+            <ellipse cx="195" cy="142" rx="46" ry="44" fill="#1b2333" stroke="rgba(255,255,255,0.22)" stroke-width="2" />
+            <circle cx="179" cy="142" r="7" fill="#e9f59d" opacity="0.85" />
+            <circle cx="211" cy="142" r="6" fill="#e9f59d" opacity="0.7" />
+            <path d="M168 205 C165 245, 240 245, 240 205 Z" fill="#1c2c57" />
+            <circle cx="95" cy="242" r="5" fill="rgba(255,255,255,0.65)" />
+            <circle cx="115" cy="226" r="4" fill="rgba(255,255,255,0.5)" />
+            <circle cx="288" cy="236" r="6" fill="rgba(255,255,255,0.7)" />
+            <circle cx="312" cy="212" r="4.5" fill="rgba(255,255,255,0.55)" />
+            <circle cx="330" cy="245" r="5" fill="rgba(255,255,255,0.55)" />
+            <defs>
+              <radialGradient id="helmetGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(185 95) rotate(60) scale(125)">
+                <stop stop-color="#3c5ba8" />
+                <stop offset="1" stop-color="#152147" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Real Hero Image (Auto-reveals when file exists) -->
+        <img
+          src="assets/profile/hero-mom.png"
+          alt="Huu Khang Portfolio 2026 Hero Artwork — M.O.M (Machine of Mementos)"
+          class="hero__img"
+          data-asset-img
+        />
+        <div class="hero__scrim" aria-hidden="true"></div>
+
+        <!-- Hero Content Overlay -->
+        <div class="hero__content">
+          <div class="hero__top-bar">
+            <div class="hero__top-tags">
+              <div class="hero__tag-row">
+                <button type="button" class="hero__tag" data-filter-jump="3d">3D</button>
+                <button type="button" class="hero__tag" data-filter-jump="illustration">2D Illustration</button>
+                <button type="button" class="hero__tag" data-filter-jump="video">Video</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__bottom hero__bottom--artwork">
+            <h1 class="sr-only">Huu Khang — Portfolio 2026</h1>
+
+            <div class="hero__meta">
+              <div class="hero__author">
+                <span class="hero__name">Huu Khang</span>
+              </div>
+
+              <div class="hero__contact-lines">
+                <button type="button" class="hero__contact-link hero__copy-btn" data-copy-email="khangph3102@gmail.com" title="Click to copy email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" />
+                  </svg>
+                  <span>khangph3102@gmail.com</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- SPLIT BENTO PANEL -->
+      <div class="bento-split">
+        <!-- LEFT PROFILE SIDEBAR -->
+        <aside class="profile-panel" aria-label="About Huu Khang">
+          <div class="profile-panel__avatar-wrap">
+            <div class="profile-panel__avatar-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="120" fill="#89a0b8" />
+                <circle cx="60" cy="44" r="21" fill="#31415c" />
+                <path d="M22 114C22 86 39 74 60 74C81 74 98 86 98 114" fill="#1e3252" />
+              </svg>
+            </div>
+            <img
+              src="assets/profile/avatar.jpg"
+              alt="Portrait of Huu Khang"
+              class="profile-panel__avatar-img"
+              data-asset-img
+            />
+          </div>
+
+          <div class="profile-panel__intro">
+            <p class="profile-panel__greeting">My name’s</p>
+            <h2 class="profile-panel__name">Khang</h2>
+            <p class="profile-panel__role">Graphic Designer / 3D Artist</p>
+            <p class="profile-panel__bio">
+              I create stuff, I make it look good,<br />
+              or at least not too bad.
+            </p>
+          </div>
+
+          <div class="profile-panel__software">
+            <p class="profile-panel__section-label">Software I am proficient at:</p>
+            <div class="software-grid" id="softwareGrid" aria-label="Software proficiency">
+              <!-- Populated by js/main.js from js/projects.js -->
+            </div>
+          </div>
+
+          <div class="profile-panel__footer-links">
+            <a href="https://huukhang.artstation.com/" target="_blank" rel="noopener noreferrer" class="profile-chip">
+              ArtStation ↗
+            </a>
+            <a href="#showcase" class="profile-chip profile-chip--accent">
+              Browse 39+ Works ↓
+            </a>
+          </div>
+        </aside>
+
+        <!-- RIGHT BENTO CATEGORY GRID -->
+        <div class="bento-grid" id="bentoGrid" aria-label="Portfolio Categories">
+          <!-- Populated by js/main.js for clean data binding & placeholder auto-hide -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 2: INTERACTIVE PORTFOLIO SHOWCASE (HƯỚNG 1)
+         ========================================================= -->
+    <section class="showcase" id="showcase" aria-label="Portfolio Projects">
+      <div class="showcase__header">
+        <div class="showcase__title-group">
+          <span class="showcase__eyebrow">Selected &amp; Archive Works</span>
+          <h2 class="showcase__heading" id="showcaseHeading">All Works</h2>
+          <p class="showcase__subtitle" id="showcaseSubtitle">
+            Selected works across 3D Art, 2D Illustration, and Video.
+          </p>
+        </div>
+
+        <div class="showcase__controls">
+          <div class="filter-tabs" id="filterTabs" role="tablist" aria-label="Filter projects by category">
+            <!-- Populated by js/main.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive Project Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Populated by js/main.js -->
+      </div>
+
+      <div class="showcase__more-wrap" id="loadMoreWrap" hidden>
+        <button type="button" class="btn-secondary" id="loadMoreBtn">
+          Show all 2D Illustration projects
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 3: CONTACT & FOOTER
+         ========================================================= -->
+    <footer class="site-footer" id="contact">
+      <div class="site-footer__inner">
+        <div class="site-footer__left">
+          <span class="showcase__eyebrow">Let’s collaborate</span>
+          <h2 class="site-footer__title">Open for 3D Art, 2D Illustration &amp; Video Projects</h2>
+          <p class="site-footer__location">Based in Ho Chi Minh City, Vietnam</p>
+        </div>
+
+        <div class="site-footer__actions">
+          <button type="button" class="btn-primary" data-copy-email="khangph3102@gmail.com">
+            <span>Copy Email: khangph3102@gmail.com</span>
+          </button>
+          <div class="site-footer__socials">
+            <a href="https://huukhang.artstation.com/" target="_blank" rel="noopener noreferrer" class="social-link">ArtStation</a>
+            <a href="https://www.instagram.com/hwkhang3102" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+            <a href="https://www.facebook.com/phung.huukhang" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>© 2026 Huu Khang. All rights reserved.</span>
+        <a href="#top" class="back-to-top">Back to Artboard ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- =========================================================
+       LIGHTBOX MODAL (PROJECT DETAIL + MULTI-SLIDE + VIDEO)
+       ========================================================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <div class="lightbox__dialog">
+      <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close project viewer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="lightbox__layout">
+        <!-- Media Viewer Stage -->
+        <div class="lightbox__stage">
+          <div class="lightbox__media-box" id="lightboxMediaBox">
+            <!-- Populated dynamically with image, video, or rich placeholder -->
+          </div>
+
+          <button type="button" class="lightbox__nav lightbox__nav--prev" id="slidePrev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button type="button" class="lightbox__nav lightbox__nav--next" id="slideNext" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+
+          <div class="lightbox__thumbs" id="lightboxThumbs" aria-label="Media slides">
+            <!-- Slide selector pills/thumbnails -->
+          </div>
+        </div>
+
+        <!-- Project Metadata & Breakdown -->
+        <div class="lightbox__sidebar">
+          <div class="lightbox__meta-top">
+            <div class="lightbox__badges" id="lightboxBadges"></div>
+            <span class="lightbox__slide-counter" id="lightboxCounter"></span>
+          </div>
+
+          <h3 class="lightbox__title" id="lightboxTitle"></h3>
+          <p class="lightbox__desc" id="lightboxDesc"></p>
+
+          <div class="lightbox__block" id="lightboxCaptionWrap" hidden>
+            <h4 class="lightbox__label">Slide Notes</h4>
+            <p class="lightbox__slide-caption" id="lightboxSlideCaption"></p>
+          </div>
+
+          <div class="lightbox__block" id="lightboxToolsWrap">
+            <h4 class="lightbox__label">Software &amp; Pipeline</h4>
+            <div class="lightbox__tools" id="lightboxTools"></div>
+          </div>
+
+          <div class="lightbox__actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" id="lightboxArtstationBtn">
+              View on ArtStation ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous / Next Project Navigation Bar -->
+      <nav class="lightbox__project-nav" id="lightboxProjectNav" aria-label="Switch between projects">
+        <button type="button" class="lightbox__proj-nav-btn lightbox__proj-nav-btn--prev" id="projPrevBtn">
+          <span class="lightbox__proj-nav-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </span>
+          <span class="lightbox__proj-nav-text">
+            <span class="lightbox__proj-nav-dir">Previous Project</span>
+            <span class="lightbox__proj-nav-name" id="projPrevName"></span>
+          </span>
+        </button>
+
+        <button type="button" class="lightbox__proj-nav-btn lightbox__proj-nav-btn--next" id="projNextBtn">
+          <span class="lightbox__proj-nav-text">
+            <span class="lightbox__proj-nav-dir">Next Project</span>
+            <span class="lightbox__proj-nav-name" id="projNextName"></span>
+          </span>
+          <span class="lightbox__proj-nav-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Mature Content Warning Modal (First-click Gate) -->
+  <div class="nsfw-modal" id="nsfwModal" role="alertdialog" aria-modal="true" aria-labelledby="nsfwModalTitle" aria-describedby="nsfwModalDesc" hidden>
+    <div class="nsfw-modal__backdrop" data-nsfw-close></div>
+    <div class="nsfw-modal__dialog">
+      <div class="nsfw-modal__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+      </div>
+      <span class="nsfw-modal__badge">Mature Content</span>
+      <h3 class="nsfw-modal__title" id="nsfwModalTitle">Mature Content Warning</h3>
+      <p class="nsfw-modal__desc" id="nsfwModalDesc">
+        <strong>Ava 3D Character</strong> is marked as Mature Content because it includes unblurred 3D human anatomical models and body UV/skin textures. Please confirm that you want to view this project.
+      </p>
+      <div class="nsfw-modal__actions">
+        <button type="button" class="btn-secondary" id="nsfwDeclineBtn" data-nsfw-close>Go Back</button>
+        <button type="button" class="btn-primary nsfw-modal__confirm" id="nsfwAcceptBtn">Yes, Show Content</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
